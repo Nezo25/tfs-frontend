@@ -67,23 +67,22 @@ export function Hero() {
             variants={itemVariants}
             className="flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
-            <Link
-              href="#contato"
+            <a href="#contato"
               className="group flex w-full items-center justify-center gap-2 rounded-md bg-green-500 px-8 py-4 text-base font-semibold text-slate-950 transition-all hover:bg-green-400 sm:w-auto"
             >
               Iniciar Projeto
               <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-            </Link>
+            </a>
             
-            <Link
-              href="#projetos"
+            <a href="#projetos"
               className="flex w-full items-center justify-center rounded-md border border-slate-700 bg-slate-800/50 px-8 py-4 text-base font-medium text-slate-100 backdrop-blur-sm transition-all hover:border-slate-600 hover:bg-slate-800 sm:w-auto"
             >
               Ver Portfólio
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
       </div>
     </section>
   );
 }
+
