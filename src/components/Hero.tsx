@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Code2, Instagram } from "lucide-react";
+import { ArrowRight, Code2, Camera } from "lucide-react";
 
 export function Hero() {
   const containerVariants: Variants = {
@@ -83,7 +83,7 @@ export function Hero() {
             <a href="https://instagram.com/theforjastudio" target="_blank" rel="noopener noreferrer"
               className="group flex w-full items-center justify-center gap-2 rounded-md bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 px-8 py-4 text-base font-semibold text-white transition-all hover:opacity-90 sm:w-auto shadow-lg shadow-pink-500/20"
             >
-              <Instagram size={18} className="transition-transform group-hover:scale-110" />
+              <Camera size={18} className="transition-transform group-hover:scale-110" />
               Nosso Instagram
             </a>
           </motion.div>
