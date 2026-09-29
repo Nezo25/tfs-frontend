@@ -70,7 +70,7 @@ export function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col"
           >
-            <form action="#" method="POST" className="flex flex-col gap-y-6 rounded-2xl bg-slate-800/40 p-8 border border-slate-700/50 backdrop-blur-sm">
+            <form onSubmit={(e) => { e.preventDefault(); alert('Mensagem enviada com sucesso! Entraremos em contato em breve.'); }} className="flex flex-col gap-y-6 rounded-2xl bg-slate-800/40 p-8 border border-slate-700/50 backdrop-blur-sm">
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div className="sm:col-span-2">
                   <label htmlFor="name" className="block text-sm font-semibold leading-6 text-slate-100">
@@ -132,3 +132,4 @@ export function Contact() {
     </section>
   );
 }
+
