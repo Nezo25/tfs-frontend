@@ -70,7 +70,7 @@ export function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col"
           >
-            <form onSubmit={(e) => { e.preventDefault(); const formData = new FormData(e.currentTarget); const name = formData.get('name'); const email = formData.get('email'); const message = formData.get('message'); if (!name || !message) { alert('Por favor, preencha seu nome e descreva o projeto.'); return; } const text = `Ol�! Meu nome � *${name}*.\nMeu e-mail �: ${email || 'N�o informado'}\n\n*Sobre o Projeto:*\n${message}`; const encodedText = encodeURIComponent(text); window.open(`https://wa.me/5511992901948?text=${encodedText}`, "_blank"); }} className="flex flex-col gap-y-6 rounded-2xl bg-slate-800/40 p-8 border border-slate-700/50 backdrop-blur-sm">
+            <form onSubmit={(e) => { e.preventDefault(); const formData = new FormData(e.currentTarget); const name = formData.get('name'); const email = formData.get('email'); const message = formData.get('message'); if (!name || !message) { alert('Por favor, preencha seu nome e descreva o projeto.'); return; } const text = `Ola! Meu nome e *${name}*.\nMeu e-mail e: ${email || 'Nao informado'}\n\n*Sobre o Projeto:*\n${message}`; const encodedText = encodeURIComponent(text); window.open(`https://wa.me/5511992901948?text=${encodedText}`, '_blank'); }} className="flex flex-col gap-y-6 rounded-2xl bg-slate-800/40 p-8 border border-slate-700/50 backdrop-blur-sm">
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                 <div className="sm:col-span-2">
                   <label htmlFor="name" className="block text-sm font-semibold leading-6 text-slate-100">
